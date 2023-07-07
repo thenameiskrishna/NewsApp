@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+.navigation {
+  margin-top: 30px;
+  font-family: var(--font1);
+  /* height: 74px;  */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-left span {
+  font-size: 35px;
+  padding-top: 30px;
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 77px;
+  font-size: 22px;
+  padding-bottom: 35px;
+}
+
+.nav-left ul li {
+  list-style: none;
+  margin: 0 14px;
+  font-family: var(--font2);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left ul li a:hover {
+  color: var(--main-bg-color);
+  font-weight: bolder;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+
+
+/* .content {
+  height: 100%;
+  display: flex;
+  margin-top: 32px;
+  padding: 9px;
+  position: relative;
+} */
+
+/* .content::after {
+  content: "";
+  background-image: url("https://www.shutterstock.com/shutterstock/videos/7613368/thumb/1.jpg?ip=x480");
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  opacity: 0.15;
+  border-radius: 12px;
+} */
+
+.content-left {
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 49px;
+  z-index: 1;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right img {
+  height: 355px;
+  border: 2px solid black;
+  border-radius: 200px;
+}
+
+.home-articles {
+  padding: 18px;
+  background-color: rgb(248, 239, 239, 0.5);
+  margin-top: 23px;
+  position: relative;
+}
+
+.year-box {
+  position: absolute;  
+  right: 0px;
+  top: 100px;
+  width: 234px;
+  height: 255px;
+  font-size: 18px;
+}
+
+.year-box div {
+  margin: 12px 0px;
+}
+
+.home-article {
+  display: flex;
+  margin: 25px;
+}
+
+.home-article img {
+  width: 300px;
+}
+
+.home-article-content {
+  align-self: center;
+  padding: 25px;
+}
+
+.home-article-content a {
+  text-decoration: none;
+  color: black;
+}
+/* .home-articles{} */
+.footer {
+  height: 50px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.footer a {
+  color: white;
+}
+
+
+/*  Nav Bar Styling for */
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  display: inline-block;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: dodgerblue;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  /* color: black; */
+  color: black;
+  padding: 20px 36px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dodgerblue background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: dodgerblue;
+  min-block-size: 10px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  /* ....Name Link Removed */
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+a { color: inherit; } 

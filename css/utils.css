@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap");
+:root { 
+  --main-bg-color: dodgerblue;
+  --font1: "Baloo Bhaina 2", cursive;
+  --font2: "Roboto", sans-serif;
+}
+
+.center{
+  text-align: center
+}
+
+.font1 {
+  font-family: var(--font1);
+}
+.font2 {
+  font-family: var(--font2);
+}
+
+.max-width-1 {
+  max-width: 99vw;
+}
+
+.max-width-2 {
+  max-width: 60vw;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-1{
+  margin-left: 23px;
+  margin-right: 23px;
+}
+
+.my-2{
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.btn {
+  padding: 0px 20px;
+  padding-top: 3px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-family: var(--font1);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: white;
+  background: var(--main-bg-color);
+}
+
+.form-input {
+  padding: 0px 5px;
+  padding-top: 3px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 0 13px;
+  font-family: var(--font1);
+}
+
+.form-box input, textarea{
+  width: 52vw;
+  padding: 0px 6px;
+  margin: 7px 0;
+  font-size: 18px;
+  font-family: var(--font1);
+  border: 2px solid var(--main-bg-color);
+    border-radius: 5px;
+}
+
+/* The Ashes Section Styling */
+.training .carousel .card{
+    background: black;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.training .carousel .card:hover{
+    background: #0ed8a5;
+}
+.training .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.training .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.training .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.training .carousel .card img{
+    height: 200px;
+    width: 500px;
+    object-fit: contain;
+    border: 5px solid black;
+    transition: all 0.3s ease;
+}
+.training .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #0ed8a5!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #0ed8a5!important;
+}
